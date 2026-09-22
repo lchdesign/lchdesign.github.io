@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="黑龙江专升本备考一站式服务平台。提供最新黑龙江专升本政策、历年真题、报考指南、热门专业及院校分数线查询，助力学子圆梦本科。">
+    <meta name="keywords" content="黑龙江专升本,黑龙江专升本网,黑龙江专升本报名,黑龙江专升本分数线,黑龙江专升本政策">
+    <title>黑龙江专升本-政策解读、报考指南与备考资料库</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f0f4f8;
+            --accent-color: #e63946;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-color: #e1e4e8;
+            --white: #ffffff;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+            --radius: 8px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+            background-color: #f9fafb;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-size: 0.85rem;
+            padding: 8px 0;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: rgba(255,255,255,0.9);
+            margin-left: 15px;
+        }
+
+        .top-bar a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .main-header {
+            padding: 15px 0;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            font-size: 1rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .btn-cta {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn-cta:hover {
+            background-color: #004494;
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0056b3 0%, #003d80 100%);
+            color: var(--white);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-white {
+            background-color: var(--white);
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn-outline {
+            border: 2px solid rgba(255,255,255,0.8);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Key Stats */
+        .stats-bar {
+            background-color: var(--white);
+            margin-top: -40px;
+            position: relative;
+            z-index: 10;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Policy Guide */
+        .policy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .policy-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .policy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .policy-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .policy-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .policy-card ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .policy-card li {
+            list-style-type: disc;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Exam Info Table */
+        .exam-info-section {
+            background-color: var(--secondary-color);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        th, td {
+            padding: 16px 24px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f1f3f5;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-new {
+            background-color: #e7f5ff;
+            color: #0056b3;
+        }
+
+        .status-updated {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        /* Preparation Resources */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-thumb {
+            height: 160px;
+            background-color: #ddd;
+            position: relative;
+        }
+
+        .resource-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .resource-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+        }
+
+        .resource-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .resource-content p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+
+        .btn-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-link:hover {
+            color: #004494;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--white);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            display: none;
+            padding-left: 10px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                display: none;
+            }
+
+            .main-header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span>欢迎访问黑龙江专升本备考平台</span>
+            <div class="top-links">
+                <a href="#">考生服务</a>
+                <a href="#">在线咨询</a>
+                <a href="#">登录 / 注册</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <a href="#" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    <span>龙江升本</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">首页</a></li>
+                        <li><a href="#policy">政策资讯</a></li>
+                        <li><a href="#exam">考试信息</a></li>
+                        <li><a href="#resources">备考资料</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn-cta">立即报名</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>圆梦本科，从这里开始</h1>
+                <p>专注黑龙江专升本政策研究与备考指导，提供权威资讯、历年真题与择校建议，助您一战成硕。</p>
+                <div class="hero-buttons">
+                    <a href="#resources" class="btn-white">获取备考资料</a>
+                    <a href="#exam" class="btn-outline">查看考试大纲</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://picsum.photos/seed/college/600/400" alt="黑龙江专升本备考场景">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">年服务经验</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50W+</span>
+                <span class="stat-label">累计考生关注</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">合作本科院校</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">上岸通过率</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Policy Guide Section -->
+    <section id="policy" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>政策与报考指南</h2>
+                <p>深入了解黑龙江专升本最新政策，掌握关键时间节点与报考流程</p>
+            </div>
+            <div class="policy-grid">
+                <article class="policy-card">
+                    <h3>2024年招生计划</h3>
+                    <p>2024年黑龙江专升本总招生计划已发布，总招生人数较去年有所增长，涵盖普通本科、民办本科及独立学院。</p>
+                    <ul>
+                        <li>普通公办院校名额缩减</li>
+                        <li>民办及独立学院扩招趋势明显</li>
+                        <li>热门专业竞争依旧激烈</li>
+                    </ul>
+                </article>
+                <article class="policy-card">
+                    <h3>考试科目与分值</h3>
+                    <p>黑龙江省专升本考试分为公共课和专业课两部分，公共课实行全省统一考试，专业课由招生院校自主命题。</p>
+                    <ul>
+                        <li>公共课：英语（满分100分）</li>
+                        <li>专业课：根据报考专业不同，涵盖计算机、管理学、高等数学等</li>
+                        <li>总分满分300分</li>
+                    </ul>
+                </article>
+                <article class="policy-card">
+                    <h3>录取分数线趋势</h3>
+                    <p>近年来，黑龙江专升本录取分数线整体保持稳定，但热门院校分数线波动较大，建议考生合理定位。</p>
+                    <ul>
+                        <li>英语单科成绩要求逐年提高</li>
+                        <li>专业课高分段竞争白热化</li>
+                        <li>关注历年最低投档线</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Info Table Section -->
+    <section id="exam" class="section exam-info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>重要考试时间节点</h2>
+                <p>关注关键日期，合理安排复习进度</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>事项</th>
+                            <th>时间安排</th>
+                            <th>状态</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>网上报名</td>
+                            <td>每年3月初</td>
+                            <td><span class="status-badge status-new">进行中</span></td>
+                            <td>登录黑龙江省教育考试院官网填报信息</td>
+                        </tr>
+                        <tr>
+                            <td>现场确认</td>
+                            <td>每年3月中下旬</td>
+                            <td><span class="status-badge status-updated">待定</span></td>
+                            <td>携带身份证及报名资料前往确认点</td>
+                        </tr>
+                        <tr>
+                            <td>全省统考</td>
+                            <td>每年4月下旬</td>
+                            <td><span class="status-badge status-updated">待定</span></td>
+                            <td>英语及专业课统一考试时间</td>
+                        </tr>
+                        <tr>
+                            <td>成绩查询</td>
+                            <td>每年5月中旬</td>
+                            <td><span class="status-badge status-updated">待定</span></td>
+                            <td>登录考试院查询个人总分及排名</td>
+                        </tr>
+                        <tr>
+                            <td>志愿填报</td>
+                            <td>每年5月下旬</td>
+                            <td><span class="status-badge status-updated">待定</span></td>
+                            <td>实行平行志愿投档模式</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>备考资源与资料库</h2>
+                <p>精选历年真题、模拟试卷及复习规划，助您高效备考</p>
+            </div>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-thumb">
+                        <img src="https://picsum.photos/seed/exam1/400/300" alt="历年真题下载">
+                        <span class="resource-tag">热门</span>
+                    </div>
+                    <div class="resource-content">
+                        <h4>2023-2018黑龙江专升本英语真题集</h4>
+                        <p>收录近6年真题，附详细答案解析，是复习英语必备资料。</p>
+                        <a href="#" class="btn-link">立即下载 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-thumb">
+                        <img src="https://picsum.photos/seed/exam2/400/300" alt="专业课复习大纲">
+                        <span class="resource-tag">更新</span>
+                    </div>
+                    <div class="resource-content">
+                        <h4>计算机科学与技术专业课复习大纲</h4>
+                        <p>2024版最新大纲发布，涵盖计算机基础、Office办公软件等考点。</p>
+                        <a href="#" class="btn-link">查看详情 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-thumb">
+                        <img src="https://picsum.photos/seed/exam3/400/300" alt="备考规划表">
+                        <span class="resource-tag">规划</span>
+                    </div>
+                    <div class="resource-content">
+                        <h4>三轮复习时间规划表</h4>
+                        <p>基础巩固、强化提升、冲刺模拟，科学安排每一阶段的复习任务。</p>
+                        <a href="#" class="btn-link">阅读规划 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-thumb">
+                        <img src="https://picsum.photos/seed/exam4/400/300" alt="择校指南">
+                    </div>
+                    <div class="resource-content">
+                        <h4>黑龙江省本科院校录取分数线汇总</h4>
+                        <p>整理近三年各院校最低录取分数线，帮助考生精准定位目标院校。</p>
+                        <a href="#" class="btn-link">查看榜单 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题解答</h2>
+                <p>关于黑龙江专升本的疑问，这里都有答案</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">黑龙江专升本可以跨专业报考吗？</div>
+                    <div class="faq-answer">
+                        <p>一般情况下，专升本考试限制在原专业或相近专业范围内报考。具体是否允许跨专业以及可跨考的专业类别，需参考当年的《招生专业目录》。部分院校对某些专业有限制，建议考生仔细查阅报考指南。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">专升本毕业后第一学历是本科吗？</div>
+                    <div class="faq-answer">
+                        <p>是的，经全国普通高等学校招生考试录取的本科学生，毕业时颁发普通高等教育本科学历证书（毕业证书），符合条件者颁发学士学位证书。其第一学历为本科。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">英语成绩对录取影响大吗？</div>
+                    <div class="faq-answer">
+                        <p>影响很大。在黑龙江省专升本考试中，英语是公共课统考科目，满分100分。很多院校在录取时，会对英语单科成绩设置最低控制线，且英语成绩在总分排名中占有一定权重。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">退役大学生士兵可以免试专升本吗？</div>
+                    <div class="faq-answer">
+                        <p>根据国家相关政策，符合条件的退役大学生士兵可参加全省统一的免文化课考试招生，由招生院校组织职业适应性综合考查，择优录取。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>龙江升本</h3>
+                    <p>致力于为黑龙江专升本考生提供最权威、最及时的考试资讯、政策解读与备考资料。我们陪伴每一位学子完成学历提升的蜕变。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">政策解读</a></li>
+                        <li><a href="#">考试时间</a></li>
+                        <li><a href="#">历年真题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>备考服务</h4>
+                    <ul>
+                        <li><a href="#">择校指南</a></li>
+                        <li><a href="#">复习资料</a></li>
+                        <li><a href="#">在线咨询</a></li>
+                        <li><a href="#">备考社区</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>电话：0451-12345678</li>
+                        <li>邮箱：service@longjiangzsb.com</li>
+                        <li>地址：黑龙江省哈尔滨市南岗区学府路1号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 黑龙江专升本服务平台 版权所有 | 本网站信息仅供参考，具体以官方发布为准</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                              </html>
