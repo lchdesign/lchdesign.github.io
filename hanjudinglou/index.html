@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="韩剧顶楼官方资料站，提供韩剧顶楼全集剧情介绍、主要角色分析、分季看点及观看指南。收录韩剧顶楼演员表、幕后花絮、经典台词及观众评分，是韩剧迷了解韩剧顶楼的最佳入口。">
+    <meta name="keywords" content="韩剧顶楼,韩剧顶楼全集,韩剧顶楼剧情,韩剧顶楼演员,韩剧顶楼观看">
+    <title>韩剧顶楼-深度解析与全集观看指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c9a959;
+            --bg-color: #f8f8f8;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        nav a:hover, nav a.active {
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/skyscraper/1600/600.jpg') center/cover no-repeat;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background-color: #b08d4b;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 60px 0;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .intro-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .intro-text p {
+            margin-bottom: 15px;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        .intro-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Characters Section */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .character-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .char-img {
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .char-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .char-info {
+            padding: 20px;
+        }
+
+        .char-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .char-info .actor {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .char-info p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Episodes List */
+        .episodes {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .episode-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .episode-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .episode-item:hover {
+            background-color: #fafafa;
+        }
+
+        .ep-number {
+            font-weight: bold;
+            width: 60px;
+            color: var(--text-light);
+        }
+
+        .ep-title {
+            flex: 1;
+            padding: 0 15px;
+        }
+
+        .ep-duration {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 60px 0;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #999;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+            }
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">韩剧顶楼</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#intro">剧情简介</a></li>
+                    <li><a href="#characters">主要角色</a></li>
+                    <li><a href="#episodes">剧集列表</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>韩剧顶楼</h1>
+                <p>揭露首尔顶级别墅的黑暗秘密，富豪阶层的残酷博弈与复仇之路。一部关于金钱、权力与人性的极致韩剧。</p>
+                <a href="#episodes" class="btn">开始观看</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section id="intro" class="intro">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <h2>剧情概述</h2>
+                        <p>《韩剧顶楼》是一部由韩国SBS电视台制作的黑色幽默犯罪剧，由金恩淑编剧，安吉镐执导。故事发生在首尔最昂贵的富人居住区“顶楼”中，这里居住着财阀家族，他们为了争夺顶级学区的入学名额，展开了你死我活的斗争。</p>
+                        <p>剧情不仅展现了顶层阶级的奢靡与堕落，更深刻地描绘了底层人物在绝望中爆发的惊人复仇。剧中充满了悬疑、惊悚与荒诞的黑色幽默，是近年来韩剧中的现象级作品。</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://picsum.photos/seed/roof/600/400.jpg" alt="韩剧顶楼场景示意图">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section id="characters" class="characters">
+            <div class="container">
+                <h2 class="section-title">主要角色</h2>
+                <div class="character-grid">
+                    <article class="character-card">
+                        <div class="char-img">
+                            <img src="https://picsum.photos/seed/vic/400/500.jpg" alt="申秀莲">
+                        </div>
+                        <div class="char-info">
+                            <h3>申秀莲</h3>
+                            <span class="actor">申惠善 饰</span>
+                            <p>从孤儿院被领养的大小姐，虽然性格善良，但为了儿子千瑞珍的入学问题，不得不卷入残酷的斗争中。</p>
+                        </div>
+                    </article>
+                    <article class="character-card">
+                        <div class="char-img">
+                            <img src="https://picsum.photos/seed/jin/400/500.jpg" alt="千瑞珍">
+                        </div>
+                        <div class="char-info">
+                            <h3>千瑞珍</h3>
+                            <span class="actor">金素妍 饰</span>
+                            <p>顶楼三栋的房主，性格强势、傲慢且极度自私。她是争夺入学名额的主要反派人物之一。</p>
+                        </div>
+                    </article>
+                    <article class="character-card">
+                        <div class="char-img">
+                            <img src="https://picsum.photos/seed/woo/400/500.jpg" alt="朱丹泰">
+                        </div>
+                        <div class="char-info">
+                            <h3>朱丹泰</h3>
+                            <span class="actor">李智勋 饰</span>
+                            <p>千瑞珍的丈夫，富二代，看似风流成性，实则心机深沉，为了家族利益不择手段。</p>
+                        </div>
+                    </article>
+                    <article class="character-card">
+                        <div class="char-img">
+                            <img src="https://picsum.photos/seed/song/400/500.jpg" alt="河俊锡">
+                        </div>
+                        <div class="char-info">
+                            <h3>河俊锡</h3>
+                            <span class="actor">严泰九 饰</span>
+                            <p>顶楼一栋的房主，财阀企业会长，拥有极高的社会地位，也是各方势力博弈的核心人物。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Episodes List -->
+        <section id="episodes" class="episodes">
+            <div class="container">
+                <h2 class="section-title">剧集列表</h2>
+                <div class="episode-list">
+                    <div class="episode-item">
+                        <span class="ep-number">S1</span>
+                        <span class="ep-title">第一集：地狱的顶楼</span>
+                        <span class="ep-duration">60分钟</span>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-number">S2</span>
+                        <span class="ep-title">第二集：隐秘的算计</span>
+                        <span class="ep-duration">60分钟</span>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-number">S3</span>
+                        <span class="ep-title">第三集：复仇的火花</span>
+                        <span class="ep-duration">60分钟</span>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-number">S4</span>
+                        <span class="ep-title">第四集：真相揭露</span>
+                        <span class="ep-duration">60分钟</span>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-number">S5</span>
+                        <span class="ep-title">第五集：终极对决</span>
+                        <span class="ep-duration">60分钟</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">常见问题</h2>
+                <div class="faq-item">
+                    <div class="faq-question">韩剧顶楼一共有几季？</div>
+                    <div class="faq-answer">
+                        《韩剧顶楼》系列共播出四季，每季均为16集，每集约60分钟。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">在哪里可以观看韩剧顶楼？</div>
+                    <div class="faq-answer">
+                        请通过正版流媒体平台或官方授权渠道观看，以支持创作者并保证观看体验。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">韩剧顶楼的结局是什么？</div>
+                    <div class="faq-answer">
+                        该系列结局为季终结局，故事在多方势力的最终博弈后落下帷幕，结局充满悬念与反思。
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 韩剧顶楼资料站. All Rights Reserved.</p>
+            <p>本站仅提供剧情介绍与角色分析，不提供在线播放服务。</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentNode;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
