@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑道邪皇2无可撼动 - 绝世狂龙再临都市，热血漫画连载与阅读指南</title>
+    <meta name="description" content="黑道邪皇2无可撼动漫画在线阅读平台，提供最新章节、人物介绍及剧情解析。讲述狂龙龙啸天重生后的复仇与守护之路，精彩内容不容错过。">
+    <meta name="keywords" content="黑道邪皇2无可撼动, 黑道邪皇2, 龙啸天, 狂龙, 热血漫画, 漫画在线阅读, 黑道邪皇续集">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #c9a227;
+            --primary-hover: #e0b536;
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-red: #d32f2f;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-left: 10px;
+            border-left: 4px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title span {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: normal;
+            border-left: none;
+            padding-left: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .search-box {
+            display: flex;
+            background: #2a2a2a;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .search-box input {
+            border: none;
+            padding: 8px 12px;
+            background: transparent;
+            color: #fff;
+            outline: none;
+            width: 150px;
+            transition: width 0.3s;
+        }
+
+        .search-box input:focus {
+            width: 200px;
+        }
+
+        .search-box button {
+            border: none;
+            background: var(--primary-color);
+            color: #000;
+            padding: 0 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/darklord/1200/600') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #ddd;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #000;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-outline:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+            padding-bottom: 3rem;
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .info-card .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .info-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .info-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Content Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        /* Latest Chapters */
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .chapter-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .chapter-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transform: translateY(-5px);
+        }
+
+        .chapter-cover {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .chapter-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .chapter-card:hover .chapter-cover img {
+            transform: scale(1.05);
+        }
+
+        .chapter-info {
+            padding: 1rem;
+        }
+
+        .chapter-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .chapter-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .badge-new {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--accent-red);
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.75rem;
+            border-radius: 2px;
+        }
+
+        /* Synopsis */
+        .synopsis-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .synopsis-text p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .character-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .character-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--bg-card);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .character-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #333;
+            overflow: hidden;
+        }
+
+        .character-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Ranking List */
+        .ranking-list {
+            counter-reset: rank;
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: var(--bg-card);
+            margin-bottom: 0.8rem;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .ranking-item:hover {
+            background: #2a2a2a;
+        }
+
+        .rank-num {
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 40px;
+            color: #555;
+            text-align: center;
+        }
+
+        .ranking-item:nth-child(1) .rank-num { color: #ffd700; }
+        .ranking-item:nth-child(2) .rank-num { color: #c0c0c0; }
+        .ranking-item:nth-child(3) .rank-num { color: #cd7f32; }
+
+        .rank-thumb {
+            width: 50px;
+            height: 70px;
+            border-radius: 4px;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+
+        .rank-content {
+            flex: 1;
+        }
+
+        .rank-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        .rank-stats {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            padding: 4rem 0 2rem;
+            border-top: 1px solid #222;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-top: 1rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #222;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                height: 400px;
+                text-align: center;
+            }
+
+            .hero-content {
+                margin: 0 auto;
+            }
+
+            .btn-group {
+                justify-content: center;
+            }
+
+            .synopsis-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .character-list {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">黑道<span>邪皇2</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">章节列表</a></li>
+                    <li><a href="#">人物图鉴</a></li>
+                    <li><a href="#">排行榜</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索章节或角色...">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">独家连载</span>
+                <h1>黑道邪皇2无可撼动</h1>
+                <p>狂龙龙啸天重生归来，在这个暗流涌动的都市中，他将以绝对的实力碾压一切阻碍。为了守护所爱之人，他再次挥动利剑，书写属于他的传奇篇章。</p>
+                <div class="btn-group">
+                    <a href="#latest" class="btn btn-primary">立即阅读</a>
+                    <a href="#intro" class="btn btn-outline">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <div class="container">
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="icon">🔥</div>
+                <h3>人气爆棚</h3>
+                <p>数百万读者在线追更，热血剧情持续发酵</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">⚡</div>
+                <h3>高清画质</h3>
+                <p>全新扫描排版，带来极致的视觉阅读体验</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🛡️</div>
+                <h3>更新稳定</h3>
+                <p>每日定时更新，绝不断更，品质保证</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">💎</div>
+                <h3>独家剧情</h3>
+                <p>还原原著精髓，还原热血江湖的恩怨情仇</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Latest Chapters -->
+        <section id="latest">
+            <div class="section-title">
+                最新章节
+                <a href="#" style="font-size: 0.9rem; color: var(--primary-color);">查看全部 &raquo;</a>
+            </div>
+            <div class="chapter-grid">
+                <!-- Chapter 1 -->
+                <article class="chapter-card">
+                    <div class="chapter-cover">
+                        <span class="badge-new">NEW</span>
+                        <img src="https://picsum.photos/seed/ch1/300/420" alt="第1章 重生归来">
+                    </div>
+                    <div class="chapter-info">
+                        <h3 class="chapter-title">第1章 重生归来</h3>
+                        <div class="chapter-meta">
+                            <span>2023-10-24</span>
+                            <span>2.3万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Chapter 2 -->
+                <article class="chapter-card">
+                    <div class="chapter-cover">
+                        <img src="https://picsum.photos/seed/ch2/300/420" alt="第2章 初露锋芒">
+                    </div>
+                    <div class="chapter-info">
+                        <h3 class="chapter-title">第2章 初露锋芒</h3>
+                        <div class="chapter-meta">
+                            <span>2023-10-23</span>
+                            <span>1.8万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Chapter 3 -->
+                <article class="chapter-card">
+                    <div class="chapter-cover">
+                        <img src="https://picsum.photos/seed/ch3/300/420" alt="第3章 真相大白">
+                    </div>
+                    <div class="chapter-info">
+                        <h3 class="chapter-title">第3章 真相大白</h3>
+                        <div class="chapter-meta">
+                            <span>2023-10-22</span>
+                            <span>2.1万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Chapter 4 -->
+                <article class="chapter-card">
+                    <div class="chapter-cover">
+                        <img src="https://picsum.photos/seed/ch4/300/420" alt="第4章 暗流涌动">
+                    </div>
+                    <div class="chapter-info">
+                        <h3 class="chapter-title">第4章 暗流涌动</h3>
+                        <div class="chapter-meta">
+                            <span>2023-10-21</span>
+                            <span>1.5万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Chapter 5 -->
+                <article class="chapter-card">
+                    <div class="chapter-cover">
+                        <img src="https://picsum.photos/seed/ch5/300/420" alt="第5章 龙啸天怒">
+                    </div>
+                    <div class="chapter-info">
+                        <h3 class="chapter-title">第5章 龙啸天怒</h3>
+                        <div class="chapter-meta">
+                            <span>2023-10-20</span>
+                            <span>3.5万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Chapter 6 -->
+                <article class="chapter-card">
+                    <div class="chapter-cover">
+                        <img src="https://picsum.photos/seed/ch6/300/420" alt="第6章 谁与争锋">
+                    </div>
+                    <div class="chapter-info">
+                        <h3 class="chapter-title">第6章 谁与争锋</h3>
+                        <div class="chapter-meta">
+                            <span>2023-10-19</span>
+                            <span>2.8万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Synopsis & Characters -->
+        <section id="intro">
+            <div class="synopsis-layout">
+                <div class="synopsis-text">
+                    <div class="section-title">作品简介</div>
+                    <p><strong>《黑道邪皇2无可撼动》</strong>承接前作，讲述了曾经叱咤风云的狂龙龙啸天在经历了背叛与重创后，带着满腔仇恨与遗憾重生回到十年前。这一次，他不再是那个只懂杀戮的莽夫，而是拥有了前世记忆与无敌实力的霸主。</p>
+                    <p>故事背景设定在一个名为“江城”的繁华都市，这里表面光鲜亮丽，实则暗藏无数势力与阴谋。龙啸天重生后，不仅要面对家族内部的倾轧、商业帝国的争斗，还要应对来自国际黑帮的步步紧逼。他誓要站在世界的顶端，让那些曾经看不起他、伤害他的人，付出血的代价。在这条复仇与争霸的道路上，他将如何布局？又将如何面对新的红颜知己？一切答案尽在《黑道邪皇2无可撼动》。</p>
+                </div>
+                <div class="character-list">
+                    <div class="character-item">
+                        <div class="character-avatar">
+                            <img src="https://picsum.photos/seed/hero/100/100" alt="龙啸天">
+                        </div>
+                        <div>
+                            <h4>龙啸天</h4>
+                            <p style="font-size: 0.8rem; color: #888;">主角 | 狂龙</p>
+                        </div>
+                    </div>
+                    <div class="character-item">
+                        <div class="character-avatar">
+                            <img src="https://picsum.photos/seed/girl1/100/100" alt="林若雪">
+                        </div>
+                        <div>
+                            <h4>林若雪</h4>
+                            <p style="font-size: 0.8rem; color: #888;">女主角 | 温柔坚定</p>
+                        </div>
+                    </div>
+                    <div class="character-item">
+                        <div class="character-avatar">
+                            <img src="https://picsum.photos/seed/villain/100/100" alt="赵泰">
+                        </div>
+                        <div>
+                            <h4>赵泰</h4>
+                            <p style="font-size: 0.8rem; color: #888;">反派 | 江城赵家少主</p>
+                        </div>
+                    </div>
+                    <div class="character-item">
+                        <div class="character-avatar">
+                            <img src="https://picsum.photos/seed/master/100/100" alt="鬼手">
+                        </div>
+                        <div>
+                            <h4>鬼手</h4>
+                            <p style="font-size: 0.8rem; color: #888;">智囊 | 隐世高手</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ranking Section -->
+        <section>
+            <div class="section-title">热门章节榜</div>
+            <div class="ranking-list">
+                <div class="ranking-item">
+                    <span class="rank-num">1</span>
+                    <img src="https://picsum.photos/seed/rk1/100/140" alt="Rank 1" class="rank-thumb">
+                    <div class="rank-content">
+                        <h4 class="rank-title">第128章：血色婚礼</h4>
+                        <div class="rank-stats">
+                            <span>热度: 45.2万</span>
+                            <span>评论: 3200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-item">
+                    <span class="rank-num">2</span>
+                    <img src="https://picsum.photos/seed/rk2/100/140" alt="Rank 2" class="rank-thumb">
+                    <div class="rank-content">
+                        <h4 class="rank-title">第127章：绝地反击</h4>
+                        <div class="rank-stats">
+                            <span>热度: 38.1万</span>
+                            <span>评论: 2800</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-item">
+                    <span class="rank-num">3</span>
+                    <img src="https://picsum.photos/seed/rk3/100/140" alt="Rank 3" class="rank-thumb">
+                    <div class="rank-content">
+                        <h4 class="rank-title">第126章：幕后黑手</h4>
+                        <div class="rank-stats">
+                            <span>热度: 35.6万</span>
+                            <span>评论: 2500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-item">
+                    <span class="rank-num">4</span>
+                    <img src="https://picsum.photos/seed/rk4/100/140" alt="Rank 4" class="rank-thumb">
+                    <div class="rank-content">
+                        <h4 class="rank-title">第125章：兄弟反目</h4>
+                        <div class="rank-stats">
+                            <span>热度: 29.8万</span>
+                            <span>评论: 1900</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-item">
+                    <span class="rank-num">5</span>
+                    <img src="https://picsum.photos/seed/rk5/100/140" alt="Rank 5" class="rank-thumb">
+                    <div class="rank-content">
+                        <h4 class="rank-title">第124章：暗夜杀机</h4>
+                        <div class="rank-stats">
+                            <span>热度: 27.4万</span>
+                            <span>评论: 1500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <div class="section-title">常见问题</div>
+            <div style="max-width: 800px;">
+                <details style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight: bold; color: var(--primary-color);">《黑道邪皇2无可撼动》在哪里可以阅读？</summary>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">本站提供正版高清在线阅读，无需下载APP即可畅享全部章节。请关注我们的更新动态，第一时间获取最新内容。</p>
+                </details>
+                <details style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight: bold; color: var(--primary-color);">更新频率是怎样的？</summary>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">为了保证阅读体验，我们通常保持每日或隔日一更的节奏。如有特殊情况导致断更，我们会提前发布公告。</p>
+                </details>
+                <details style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight: bold; color: var(--primary-color);">作品是否完结？</summary>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">目前《黑道邪皇2无可撼动》正处于连载中，剧情精彩纷呈，敬请期待后续章节的发布。</p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">黑道<span>邪皇2</span></a>
+                    <p class="footer-desc">专注于提供最优质的网络漫画阅读体验。汇聚热血、玄幻、都市等各类热门漫画，打造属于读者的二次元精神家园。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">排行榜</a></li>
+                        <li><a href="#">分类浏览</a></li>
+                        <li><a href="#">全站地图</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>阅读分类</h4>
+                    <ul>
+                        <li><a href="#">热血战斗</a></li>
+                        <li><a href="#">都市异能</a></li>
+                        <li><a href="#">豪门恩怨</a></li>
+                        <li><a href="#">古代传奇</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">用户反馈</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">广告合作</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 黑道邪皇2无可撼动阅读网 版权所有. 本站内容仅供学习交流使用，请勿用于商业用途.
+            </div>
+        </div>
+    </footer>
+
+</body>
+                      </html>
