@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>襄汾吧-襄汾本地资讯、生活服务与社区互动平台</title>
+    <meta name="description" content="襄汾吧提供襄汾县最新的本地新闻、生活便民服务、二手交易信息及社区网友互动。关注襄汾发展，连接你我生活，打造襄汾人自己的网络家园。">
+    <meta name="keywords" content="襄汾吧,襄汾新闻,襄汾生活,襄汾本地,襄汾社区,襄汾论坛,襄汾便民">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #f5f5f5;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --text-light: #999999;
+            --border-color: #e0e0e0;
+            --container-width: 1200px;
+            --header-height: 70px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-left: 12px;
+            border-left: 4px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title a {
+            font-size: 12px;
+            color: var(--text-light);
+            font-weight: normal;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            height: var(--header-height);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            margin-left: 8px;
+            color: var(--text-dark);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .search-bar {
+            display: flex;
+            background: var(--secondary-color);
+            border-radius: 4px;
+            padding: 5px 10px;
+            width: 300px;
+        }
+
+        .search-bar input {
+            border: none;
+            background: transparent;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            color: var(--text-gray);
+        }
+
+        /* Main Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* Left Column - Content */
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            width: 100%;
+            height: 360px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        .hero-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Article List */
+        .article-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+            transition: box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .article-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .article-meta span {
+            margin-right: 15px;
+        }
+
+        .article-excerpt {
+            color: var(--text-gray);
+            font-size: 14px;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-tags {
+            margin-top: 12px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .tag {
+            font-size: 12px;
+            padding: 2px 8px;
+            background: #f0f0f0;
+            color: var(--text-gray);
+            border-radius: 10px;
+        }
+
+        /* Right Column - Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-widget {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .hot-list {
+            counter-reset: hot-counter;
+        }
+
+        .hot-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .hot-item:last-child {
+            border-bottom: none;
+        }
+
+        .hot-item::before {
+            counter-increment: hot-counter;
+            content: counter(hot-counter);
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--text-light);
+            margin-right: 10px;
+            min-width: 20px;
+        }
+
+        .hot-item a {
+            font-size: 14px;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+
+        .hot-item a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            background: #fff;
+            padding: 15px 10px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s;
+        }
+
+        .info-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-color);
+        }
+
+        .info-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .info-name {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b2b2b;
+            color: #ccc;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #3d3d3d;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none; /* Simplified for mobile */
+            }
+
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-banner {
+                height: 200px;
+            }
+            
+            .hero-content h2 {
+                font-size: 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                襄汾吧
+                <span>襄汾人自己的网络家园</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#" class="active">首页</a>
+                <a href="#">本地资讯</a>
+                <a href="#">生活服务</a>
+                <a href="#">二手交易</a>
+                <a href="#">情感社区</a>
+                <a href="#">美食攻略</a>
+            </nav>
+
+            <div class="search-bar">
+                <input type="text" placeholder="搜索襄汾新闻、二手信息...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="main-layout">
+            
+            <!-- Left: Content Area -->
+            <section class="content-area">
+                
+                <!-- Hero Section -->
+                <div class="hero-banner">
+                    <div class="hero-content">
+                        <h2>聚焦襄汾发展，连接你我生活</h2>
+                        <p>襄汾吧致力于为本地网友提供最及时的本地资讯、最便捷的生活服务以及最真实的互动交流平台。</p>
+                        <a href="#" class="btn">立即发布信息</a>
+                    </div>
+                </div>
+
+                <!-- Latest News -->
+                <div class="section-title">
+                    <span>最新资讯</span>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+
+                <article class="article-card">
+                    <h3 class="article-title"><a href="#">襄汾县举办2023年“汾水之夏”文化艺术节系列活动</a></h3>
+                    <div class="article-meta">
+                        <span>📅 2023-10-24</span>
+                        <span>📍 襄汾县</span>
+                        <span>👁 1,234</span>
+                    </div>
+                    <p class="article-excerpt">
+                        近日，襄汾县2023年“汾水之夏”文化艺术节在丁陶广场盛大开幕。本次活动以“传承文化，点亮生活”为主题，为期五天，汇集了歌舞表演、戏曲展演、非遗展示等多项精彩内容，吸引了周边县市的数万名市民前往观看，进一步丰富了群众的精神文化生活，展现了襄汾深厚的文化底蕴。
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">文化活动</span>
+                        <span class="tag">丁陶广场</span>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <h3 class="article-title"><a href="#">襄汾交警大队开展“一盔一带”安全守护行动</a></h3>
+                    <div class="article-meta">
+                        <span>📅 2023-10-22</span>
+                        <span>📍 交通管理</span>
+                        <span>👁 856</span>
+                    </div>
+                    <p class="article-excerpt">
+                        为有效预防和减少道路交通事故，保障人民群众生命财产安全，襄汾交警大队在全县范围内持续开展“一盔一带”安全守护行动。民警在重点路口路段对驾乘摩托车、电动自行车不戴安全头盔、汽车驾乘人员不使用安全带的行为进行严格检查和劝导，并向过往群众普及交通安全知识。
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">交通安全</span>
+                        <span class="tag">便民服务</span>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <h3 class="article-title"><a href="#">襄汾县汾河公园新添便民休憩设施</a></h3>
+                    <div class="article-meta">
+                        <span>📅 2023-10-20</span>
+                        <span>📍 城市建设</span>
+                        <span>👁 2,103</span>
+                    </div>
+                    <p class="article-excerpt">
+                        随着秋意渐浓，汾河公园成为了市民散步休闲的好去处。为了进一步提升市民的游园体验，县园林部门近期对汾河公园内的休闲座椅、照明设施及健身器材进行了全面升级和修缮，增设了多处无障碍通道，让市民在享受自然美景的同时，也能感受到更加舒适、便捷的服务。
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">城市建设</span>
+                        <span class="tag">汾河公园</span>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <h3 class="article-title"><a href="#">襄汾特色美食：丁陶烧饼制作技艺入选市级非遗</a></h3>
+                    <div class="article-meta">
+                        <span>📅 2023-10-18</span>
+                        <span>📍 美食文化</span>
+                        <span>👁 3,456</span>
+                    </div>
+                    <p class="article-excerpt">
+                        近日，襄汾丁陶烧饼制作技艺被正式列入临汾市第五批非物质文化遗产代表性项目名录。这一传统美食以其外酥里嫩、层次分明、香气浓郁的特点闻名遐迩，承载着几代襄汾人的味蕾记忆。如今，这项技艺正通过代代相传的方式，继续在传承中创新，焕发出新的生机。
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">美食文化</span>
+                        <span class="tag">非遗传承</span>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Right: Sidebar -->
+            <aside>
+                <!-- Hot List -->
+                <div class="sidebar-widget">
+                    <div class="section-title" style="margin-bottom: 15px; border-left: none; padding-left: 0;">
+                        <span>🔥 热门话题</span>
+                    </div>
+                    <div class="hot-list">
+                        <div class="hot-item"><a href="#">襄汾未来城市发展规划最新解读</a></div>
+                        <div class="hot-item"><a href="#">汾河襄汾段水质改善情况通报</a></div>
+                        <div class="hot-item"><a href="#">襄汾最新招聘信息汇总（10月）</a></div>
+                        <div class="hot-item"><a href="#">关于规范城区停车秩序的公告</a></div>
+                        <div class="hot-item"><a href="#">襄汾老乡群：寻找失散多年的战友</a></div>
+                        <div class="hot-item"><a href="#">本地特产“汾酒”文化节开幕</a></div>
+                    </div>
+                </div>
+
+                <!-- Life Services -->
+                <div class="sidebar-widget">
+                    <div class="section-title" style="margin-bottom: 15px; border-left: none; padding-left: 0;">
+                        <span>🛠️ 便民服务</span>
+                    </div>
+                    <div class="info-grid">
+                        <a href="#" class="info-item">
+                            <span class="info-icon">🚗</span>
+                            <span class="info-name">车辆违章</span>
+                        </a>
+                        <a href="#" class="info-item">
+                            <span class="info-icon">📞</span>
+                            <span class="info-name">办事指南</span>
+                        </a>
+                        <a href="#" class="info-item">
+                            <span class="info-icon">🏥</span>
+                            <span class="info-name">医院挂号</span>
+                        </a>
+                        <a href="#" class="info-item">
+                            <span class="info-icon">🏫</span>
+                            <span class="info-name">学区查询</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Community Notice -->
+                <div class="sidebar-widget">
+                    <div class="section-title" style="margin-bottom: 15px; border-left: none; padding-left: 0;">
+                        <span>📢 社区公告</span>
+                    </div>
+                    <ul style="font-size: 13px; color: var(--text-gray); line-height: 2;">
+                        <li style="border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="#">[通知] 襄汾吧版主招募公告</a>
+                        </li>
+                        <li style="border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="#">[倡议] 文明上网，理性发言</a>
+                        </li>
+                        <li style="border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="#">[活动] 网友见面会报名开启</a>
+                        </li>
+                        <li>
+                            <a href="#">[维护] 服务器将于今晚进行升级</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>关于襄汾吧</h3>
+                    <p style="font-size: 12px; line-height: 1.8; color: #999;">
+                        襄汾吧是襄汾县最具影响力的本地网络社区，致力于为当地居民提供新闻资讯、生活服务、情感交流及商业推广平台。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系合作</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>热门分类</h3>
+                    <ul>
+                        <li><a href="#">本地新闻</a></li>
+                        <li><a href="#">二手市场</a></li>
+                        <li><a href="#">房屋租售</a></li>
+                        <li><a href="#">求职招聘</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>联系我们</h3>
+                    <ul>
+                        <li>电话：0357-XXXXXXX</li>
+                        <li>邮箱：contact@xiangfenba.com</li>
+                        <li>地址：山西省临汾市襄汾县</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 襄汾吧 版权所有 | ICP备XXXXXXXX号
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
