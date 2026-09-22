@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南瓜影视大全在线电视剧免费观看 - 最新高清影视资源库</title>
+    <meta name="description" content="南瓜影视大全提供海量高清电视剧免费观看服务，涵盖国产剧、美剧、韩剧、日剧等，更新快、画质好，支持在线播放与离线下载，满足您24小时的追剧需求。">
+    <meta name="keywords" content="南瓜影视大全,在线电视剧,免费观看,高清影视,国产剧,美剧,韩剧,在线播放">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #ff6b35; /* 南瓜橙 */
+            --secondary-color: #2d3436;
+            --accent-color: #0984e3;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-main: #2d3436;
+            --text-sub: #636e72;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--primary-color);
+        }
+
+        .search-box {
+            display: flex;
+            background: #f1f2f6;
+            border-radius: 20px;
+            padding: 5px 15px;
+            width: 300px;
+        }
+
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .search-box button {
+            background: transparent;
+            border: none;
+            color: var(--text-sub);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .hero-tag:hover {
+            background: rgba(255,255,255,0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 30px;
+        }
+
+        /* Sidebar */
+        aside {
+            position: sticky;
+            top: 90px;
+            height: fit-content;
+        }
+
+        .category-list li {
+            margin-bottom: 10px;
+        }
+
+        .category-list a {
+            display: block;
+            padding: 10px 15px;
+            border-radius: var(--border-radius);
+            color: var(--text-sub);
+            transition: var(--transition);
+        }
+
+        .category-list a:hover, .category-list a.active {
+            background-color: #fff;
+            color: var(--primary-color);
+            box-shadow: var(--shadow);
+            font-weight: 600;
+        }
+
+        /* Content Area */
+        .content-section {
+            margin-bottom: 50px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .view-more {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card-cover {
+            position: relative;
+            padding-top: 140%; /* Aspect ratio */
+            background-color: #ddd;
+        }
+
+        .card-cover img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .card-info {
+            padding: 12px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--text-sub);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Features Section */
+        .features {
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .feature-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d3436;
+            color: #b2bec3;
+            padding: 50px 20px 20px;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                height: auto;
+                flex-direction: column;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .nav-menu {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                position: static;
+                order: 2;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <a href="#" class="logo">
+            🎃 南瓜影视
+            <span>大全</span>
+        </a>
+        <nav class="nav-menu">
+            <a href="#" class="active">首页</a>
+            <a href="#">国产剧</a>
+            <a href="#">美剧</a>
+            <a href="#">韩剧</a>
+            <a href="#">动漫</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="搜索电影、电视剧...">
+            <button>🔍</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>南瓜影视大全：海量高清电视剧免费观看</h1>
+        <p>汇集全网最新热播剧集，支持高清流畅播放，随时随地畅享追剧时光。</p>
+        <div class="hero-tags">
+            <span class="hero-tag">🔥 热门推荐</span>
+            <span class="hero-tag">⭐ 评分最高</span>
+            <span class="hero-tag">📺 正在热播</span>
+            <span class="hero-tag">🎬 经典回顾</span>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <ul class="category-list">
+                <li><a href="#" class="active">全部</a></li>
+                <li><a href="#">古装剧</a></li>
+                <li><a href="#">都市言情</a></li>
+                <li><a href="#">悬疑犯罪</a></li>
+                <li><a href="#">历史传记</a></li>
+                <li><a href="#">军旅题材</a></li>
+                <li><a href="#">科幻奇幻</a></li>
+                <li><a href="#">家庭伦理</a></li>
+                <li><a href="#">喜剧综艺</a></li>
+                <li><a href="#">欧美剧</a></li>
+                <li><a href="#">日韩剧</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            
+            <!-- Section: Hot Drama -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>🔥 正在热播</h2>
+                    <a href="#" class="view-more">查看更多 &rarr;</a>
+                </div>
+                <div class="video-grid">
+                    <!-- Item 1 -->
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/drama1/300/420" alt="电视剧封面">
+                            <span class="card-badge">HD</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">锦绣未央：绝世风华</h3>
+                            <div class="card-meta">
+                                <span>古装 / 爱情</span>
+                                <span>更新至 45 集</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Item 2 -->
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/drama2/300/420" alt="电视剧封面">
+                            <span class="card-badge">HD</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">破冰行动：雷霆出击</h3>
+                            <div class="card-meta">
+                                <span>犯罪 / 剧情</span>
+                                <span>更新至 30 集</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Item 3 -->
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/drama3/300/420" alt="电视剧封面">
+                            <span class="card-badge">HD</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">时光里的秘密</h3>
+                            <div class="card-meta">
+                                <span>都市 / 爱情</span>
+                                <span>更新至 20 集</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Item 4 -->
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/drama4/300/420" alt="电视剧封面">
+                            <span class="card-badge">HD</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">星际迷航：深空</h3>
+                            <div class="card-meta">
+                                <span>科幻 / 冒险</span>
+                                <span>更新至 12 集</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Item 5 -->
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/drama5/300/420" alt="电视剧封面">
+                            <span class="card-badge">HD</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">繁花似锦</h3>
+                            <div class="card-meta">
+                                <span>历史 / 传奇</span>
+                                <span>更新至 50 集</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Item 6 -->
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/drama6/300/420" alt="电视剧封面">
+                            <span class="card-badge">HD</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">沉默的证人</h3>
+                            <div class="card-meta">
+                                <span>悬疑 / 惊悚</span>
+                                <span>更新至 24 集</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Section: Ranking -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>🏆 高分榜单</h2>
+                    <a href="#" class="view-more">查看榜单 &rarr;</a>
+                </div>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/rank1/300/420" alt="电视剧封面">
+                            <span class="card-badge">TOP1</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">权力的游戏：凛冬将至</h3>
+                            <div class="card-meta">
+                                <span>奇幻 / 史诗</span>
+                                <span>评分 9.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/rank2/300/420" alt="电视剧封面">
+                            <span class="card-badge">TOP2</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">甄嬛传：后传</h3>
+                            <div class="card-meta">
+                                <span>古装 / 宫斗</span>
+                                <span>评分 9.5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/rank3/300/420" alt="电视剧封面">
+                            <span class="card-badge">TOP3</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">老友记：重聚</h3>
+                            <div class="card-meta">
+                                <span>喜剧 / 生活</span>
+                                <span>评分 9.6</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="card-cover">
+                            <img src="https://picsum.photos/seed/rank4/300/420" alt="电视剧封面">
+                            <span class="card-badge">TOP4</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">绝命毒师：终极篇</h3>
+                            <div class="card-meta">
+                                <span>犯罪 / 剧情</span>
+                                <span>评分 9.7</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Section: Features -->
+            <section class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <h3>极速加载</h3>
+                    <p>智能节点优选，确保视频秒开，告别卡顿。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📺</div>
+                    <h3>超清画质</h3>
+                    <p>支持 1080P/4K 画质切换，享受影院级视听体验。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>多端同步</h3>
+                    <p>手机、平板、电脑无缝切换，随时随地继续观看。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>安全纯净</h3>
+                    <p>无广告弹窗干扰，绿色无毒，保护您的上网安全。</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>南瓜影视大全</h4>
+            <p style="font-size: 0.9rem; line-height: 1.8;">
+                专注于为用户提供免费、高清、流畅的在线电视剧观看服务。我们致力于构建最完善的影视资源库，让每一位用户都能找到心仪的剧集。
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>快速导航</h4>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">最新剧集</a></li>
+                <li><a href="#">高分榜单</a></li>
+                <li><a href="#">分类浏览</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>剧集分类</h4>
+            <ul>
+                <li><a href="#">国产剧</a></li>
+                <li><a href="#">欧美剧</a></li>
+                <li><a href="#">日韩剧</a></li>
+                <li><a href="#">动漫</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>联系我们</h4>
+            <ul>
+                <li><a href="#">用户反馈</a></li>
+                <li><a href="#">版权声明</a></li>
+                <li><a href="#">免责声明</a></li>
+                <li><a href="#">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 南瓜影视大全. All Rights Reserved. 本站内容仅供学习交流，请于下载后24小时内删除。</p>
+    </div>
+</footer>
+
+</body>
+                  </html>
